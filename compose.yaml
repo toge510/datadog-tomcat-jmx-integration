@@ -22,6 +22,7 @@ services:
     environment:
       - DD_API_KEY=
       - DD_SITE=ap1.datadoghq.com
+      - DD_AC_EXCLUDE=name:dd-agent
       # - DD_LOG_LEVEL=info
     volumes:
       - /proc/:/host/proc/:ro
